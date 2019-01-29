@@ -4,6 +4,52 @@ const text = function (addExcitement) {
     console.log(addExcitement);
 }
 
+
+let words = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
+
+// function addExcitement (theWordArray) {
+//     let buildMeUp = ""
+//     for (let i = 0; i < theWordArray.length; i++) {
+//       buildMeUp =`${buildMeUp} ${theWordArray[i]}`;
+//         console.log(buildMeUp);
+//     } 
+// }
+
+// function addExcitement (theWordArray) {
+//     let buildMeUp = ""
+//     for (let i = 0; i < words.length; i++) {
+//       buildMeUp =buildMeUp + " " +words[i];
+//         console.log(buildMeUp);
+//     } 
+   
+// }
+function addExcitement (theWordArray) {
+   let buildMeUp = "";
+    for (let i = 0; i < theWordArray.length; i++) {
+      let wordToAdd = theWordArray[i];
+      if(i%3 ===0){
+          wordToAdd = wordToAdd + "!";
+      }
+   buildMeUp = `${buildMeUp} ${theWordArray[i]}`
+}
+}
+addExcitement(words)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // If you haven't done so yet, create the workspace/javascript/overly-excited directory structure in your home directory. Open your terminal and enter in the following command.
 
 // mkdir -p ~/workspace/javascript/overly-excited
